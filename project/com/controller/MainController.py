@@ -45,7 +45,7 @@ def validateLogin():
 
         else:
             for i in loginDictList:
-                if i['loginUsername'] == username or i['loginPassword'] == password:
+                if i['loginUsername'] == username and i['loginPassword'] == password:
                     return render_template('index.html')
 
                 else:
